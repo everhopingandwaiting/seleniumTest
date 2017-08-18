@@ -1,1 +1,1 @@
-##  selei=nium
+##  selenium

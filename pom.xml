@@ -7,7 +7,7 @@
     <groupId>com.jy.selenium</groupId>
     <artifactId>com.jy.selenium</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <!--<packaging>jar</packaging>-->
 
 
     <dependencies>
@@ -33,104 +33,69 @@
                 </configuration>
             </plugin>
 
+
+
+            <!--  exe-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>m</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-            <!-- 拷贝依赖的jar包到lib目录 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
+                <artifactId>maven-shade-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy-dependencies</goal>
+                            <goal>shade</goal>
                         </goals>
-                        <configuration>
-                            <outputDirectory>
-                                ${project.build.directory}/lib
-                            </outputDirectory>
-                        </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <shadedArtifactAttached>true</shadedArtifactAttached>
+                    <shadedClassifierName>shaded</shadedClassifierName>
+                    <transformers>
+                        <transformer
+                                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>m</mainClass>
+                        </transformer>
+                    </transformers>
+                </configuration>
             </plugin>
-
-
             <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
+                        <id>l4j-clui</id>
+                        <phase>package</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>launch4j</goal>
                         </goals>
                         <configuration>
-                            <tasks>
-
-                                <copy todir="${project.build.directory}/driver" overwrite="true">
-                                    <fileset dir="${pom.basedir}/driver"/>
-                                </copy>
-
-
-                            </tasks>
+                            <headerType>gui</headerType>
+                            <jar>${project.build.directory}/${artifactId}-${version}-shaded.jar</jar>
+                            <outfile>${project.build.directory}/lanshouxiangu.exe</outfile>
+                            <downloadUrl>http://java.com/download</downloadUrl>
+                            <classPath>
+                                <mainClass>m</mainClass>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <icon>icon/jy.ico</icon>
+                            <jre>
+                                <minVersion>1.7.0</minVersion>
+                                <jdkPreference>preferJre</jdkPreference>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>1.0.0.0</fileVersion>
+                                <txtFileVersion>${project.version}</txtFileVersion>
+                                <fileDescription>${project.name}</fileDescription>
+                                <copyright>jy</copyright>
+                                <productVersion>1.0.0.0</productVersion>
+                                <txtProductVersion>1.0.0.0</txtProductVersion>
+                                <productName>${project.name}</productName>
+                                <companyName>www.lanshouxiangu.top</companyName>
+                                <internalName>lanshouxiangu</internalName>
+                                <originalFilename>j.yao.selenium.exe</originalFilename>
+                            </versionInfo>
                         </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!--     <plugin>
-                     <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-dependency-plugin</artifactId>
-                     <executions>
-                         <execution>
-                             <id>copy</id>
-                             <phase>install</phase>
-                             <goals>
-                                 <goal>copy-dependencies</goal>
-                             </goals>
-                             <configuration>
-                                 <outputDirectory>
-                                     ${project.build.directory}/${pom.name}/WEB-INF/lib
-                                 </outputDirectory>
-                             </configuration>
-                         </execution>
-                     </executions>
-                 </plugin>
-     -->
-
-            <!-- 解决资源文件的编码问题 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <!-- 打包source文件为jar文件 -->
-            <plugin>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.1</version>
-                <configuration>
-                    <attach>true</attach>
-                    <!--<encoding>UTF-8</encoding>-->
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
                     </execution>
                 </executions>
             </plugin>
