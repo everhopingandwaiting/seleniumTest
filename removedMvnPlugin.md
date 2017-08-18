@@ -59,27 +59,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <tasks>
-
-                                <copy todir="${project.build.directory}/driver" overwrite="true">
-                                    <fileset dir="${pom.basedir}/driver"/>
-                                </copy>
-
-
-                            </tasks>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+           
             <!--     <plugin>
                      <groupId>org.apache.maven.plugins</groupId>
                      <artifactId>maven-dependency-plugin</artifactId>

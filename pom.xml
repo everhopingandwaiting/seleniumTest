@@ -34,7 +34,27 @@
             </plugin>
 
 
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
 
+                                <copy todir="${project.build.directory}/driver" overwrite="true">
+                                    <fileset dir="${pom.basedir}/driver"/>
+                                </copy>
+
+
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <!--  exe-->
 
             <plugin>
