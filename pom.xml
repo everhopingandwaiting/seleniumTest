@@ -7,7 +7,7 @@
     <groupId>com.jy.selenium</groupId>
     <artifactId>com.jy.selenium</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <!--<packaging>jar</packaging>-->
+    <packaging>jar</packaging>
 
 
     <dependencies>

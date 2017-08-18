@@ -11,7 +11,7 @@ public class m {
     public static void main(String[] args) {
 
 
-        System.setProperty("webdriver.chrome.driver", "driver/" + OSinfo.getOSname() + "_chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/" + OSinfo.getOSname() + "_chromedriver");
 
         /*OSinfo.getOSname();
         System.out.println( System.getProperty("os.name") );
