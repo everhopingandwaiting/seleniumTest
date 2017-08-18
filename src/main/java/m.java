@@ -1,3 +1,4 @@
+import org.jy.tool.OSinfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,13 @@ public class m {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver", "driver/" + OSinfo.getOSname() + "_chromedriver.exe");
+
+        /*OSinfo.getOSname();
+        System.out.println( System.getProperty("os.name") );
+        System.out.println( System.getProperty("os.version") );
+        System.out.println( System.getProperty("os.arch") );*/
 
         //初始化一个chrome浏览器实例，实例名称叫driver
 //        WebDriver driver = new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome());

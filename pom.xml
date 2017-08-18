@@ -10,15 +10,15 @@
     <packaging>jar</packaging>
 
 
- <dependencies>
-     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-     <dependency>
-         <groupId>org.seleniumhq.selenium</groupId>
-         <artifactId>selenium-java</artifactId>
-         <version>3.4.0</version>
-     </dependency>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+        </dependency>
 
- </dependencies>
+    </dependencies>
 
     <build>
 
@@ -65,6 +65,49 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+
+                                <copy todir="${project.build.directory}/driver" overwrite="true">
+                                    <fileset dir="${pom.basedir}/driver"/>
+                                </copy>
+
+
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--     <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-dependency-plugin</artifactId>
+                     <executions>
+                         <execution>
+                             <id>copy</id>
+                             <phase>install</phase>
+                             <goals>
+                                 <goal>copy-dependencies</goal>
+                             </goals>
+                             <configuration>
+                                 <outputDirectory>
+                                     ${project.build.directory}/${pom.name}/WEB-INF/lib
+                                 </outputDirectory>
+                             </configuration>
+                         </execution>
+                     </executions>
+                 </plugin>
+     -->
+
             <!-- 解决资源文件的编码问题 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
