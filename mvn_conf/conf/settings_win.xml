@@ -50,7 +50,7 @@ under the License.
    | The path to the local repository maven will use to store artifacts.
    |
    | Default: ${user.home}/.m2/repository  -->
-	<localRepository>/opt/maven/repository</localRepository>
+  <localRepository>D:\Program Files (x86)\apache-maven-3.3.9\repository</localRepository>
 
 
   <!-- interactiveMode
