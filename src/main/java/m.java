@@ -1,27 +1,32 @@
-import org.jy.tool.OSinfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class m {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
 
-        System.setProperty("webdriver.chrome.driver", "driver/" + OSinfo.getOSname() + "_chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "driver/" + OSinfo.getOSname() + "_chromedriver");
 
-        /*OSinfo.getOSname();
-        System.out.println( System.getProperty("os.name") );
-        System.out.println( System.getProperty("os.version") );
-        System.out.println( System.getProperty("os.arch") );*/
 
+        String url = "http://192.168.0.222:5555/wd/hub";
         //初始化一个chrome浏览器实例，实例名称叫driver
-//        WebDriver driver = new RemoteWebDriver("http://127.0.0.1:9515", DesiredCapabilities.chrome());
+        WebDriver driver = new RemoteWebDriver( DesiredCapabilities.firefox());
 
-        WebDriver driver = new ChromeDriver();
+        DesiredCapabilities dc = DesiredCapabilities.chrome(); // 设置需要驱动的浏览器，其他的浏览器都是以此类推
+        driver = new RemoteWebDriver(new URL(url), dc); // 这个URL的问题
+
+        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS); // 设置页面加载超时的最大时长
+
+
+
+//        WebDriver driver = new ChromeDriver();
         //最大化窗口
 //        driver.manage().window().maximize();
         //设置隐性等待时间
