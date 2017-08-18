@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a671915e-fc28-45b2-a6f6-7a75153430c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver32" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../comjyselenium/start.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver64" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver" />
     </list>
     <ignored path="$PROJECT_DIR$/../comjyselenium/out/" />
     <ignored path="$PROJECT_DIR$/../comjyselenium/target/" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../comjyselenium/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="381">
+              <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -49,6 +48,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../comjyselenium/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,16 +169,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings_win.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../comjyselenium/mvn_conf/conf/settings_win.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -216,6 +215,7 @@
         <option value="$PROJECT_DIR$/../comjyselenium/src/main/java/m.java" />
         <option value="$PROJECT_DIR$/../comjyselenium/removedMvnPlugin.md" />
         <option value="$PROJECT_DIR$/../comjyselenium/pom.xml" />
+        <option value="$PROJECT_DIR$/../comjyselenium/start.sh" />
       </list>
     </option>
   </component>
@@ -255,8 +255,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="235" />
-    <option name="y" value="325" />
+    <option name="x" value="35" />
+    <option name="y" value="183" />
     <option name="width" value="1761" />
     <option name="height" value="897" />
   </component>
@@ -349,8 +349,8 @@
       <recent name="org.jy.tool" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\comjyselenium\driver" />
       <recent name="D:\comjyselenium" />
+      <recent name="D:\comjyselenium\driver" />
       <recent name="D:\comjyselenium\mvn_conf\conf" />
       <recent name="D:\comjyselenium\mvn_conf" />
       <recent name="D:\comjyselenium\src\main\java" />
@@ -580,7 +580,7 @@
       <workItem from="1502946882511" duration="13206000" />
       <workItem from="1502963665827" duration="1176000" />
       <workItem from="1503021520235" duration="5546000" />
-      <workItem from="1503027512651" duration="4370000" />
+      <workItem from="1503027512651" duration="5369000" />
     </task>
     <task id="LOCAL-00001" summary="mvn  config  settings.xl">
       <created>1503022269145</created>
@@ -624,14 +624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503034615566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bug">
+      <created>1503035257755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1503035257755</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24298000" />
+    <option name="totallyTimeSpent" value="25297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="235" y="325" width="1761" height="897" extended-state="0" />
+    <frame x="35" y="183" width="1761" height="897" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1044,17 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../comjyselenium/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/m.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1078,13 +1074,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../comjyselenium/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="381">
+          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../comjyselenium/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../comjyselenium/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
