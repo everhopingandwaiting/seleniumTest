@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a671915e-fc28-45b2-a6f6-7a75153430c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../comjyselenium/Dockerfile" />
+    <list default="true" id="a671915e-fc28-45b2-a6f6-7a75153430c1" name="Default" comment="docker support">
       <change type="DELETED" beforePath="$PROJECT_DIR$/../comjyselenium/src/main/java/cqd.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/target/classes/cqd.class" afterPath="$PROJECT_DIR$/../comjyselenium/target/classes/cqd.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/target/classes/m.class" afterPath="$PROJECT_DIR$/../comjyselenium/target/classes/m.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/README.md" afterPath="$PROJECT_DIR$/../comjyselenium/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/src/main/java/m.java" afterPath="$PROJECT_DIR$/../comjyselenium/src/main/java/m.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../comjyselenium/out/" />
     <ignored path="$PROJECT_DIR$/../comjyselenium/target/" />
@@ -41,12 +43,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../comjyselenium/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -93,8 +95,8 @@
       <file leaf-file-name="m.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/m.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqd.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/cqd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -157,8 +149,11 @@
         <entry key="$PROJECT_DIR$/../comjyselenium" value="j1.7" />
       </map>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
     <push-targets>
-      <push-target-info target-remote="gogs" target-branch="master" repo="$PROJECT_DIR$/../comjyselenium" source="master" />
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$/../comjyselenium" source="master" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -180,10 +175,11 @@
         <option value="$PROJECT_DIR$/../comjyselenium/removedMvnPlugin.md" />
         <option value="$PROJECT_DIR$/../comjyselenium/pom.xml" />
         <option value="$PROJECT_DIR$/../comjyselenium/start.sh" />
-        <option value="$PROJECT_DIR$/../comjyselenium/README.md" />
         <option value="$PROJECT_DIR$/../comjyselenium/selenium_hub.md" />
-        <option value="$PROJECT_DIR$/../comjyselenium/src/main/java/m.java" />
         <option value="$PROJECT_DIR$/../comjyselenium/Dockerfile" />
+        <option value="$PROJECT_DIR$/../comjyselenium/src/main/java/cqd.java" />
+        <option value="$PROJECT_DIR$/../comjyselenium/src/main/java/m.java" />
+        <option value="$PROJECT_DIR$/../comjyselenium/README.md" />
       </list>
     </option>
   </component>
@@ -223,8 +219,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="259" />
-    <option name="y" value="57" />
+    <option name="x" value="284" />
+    <option name="y" value="70" />
     <option name="width" value="1761" />
     <option name="height" value="897" />
   </component>
@@ -548,7 +544,7 @@
       <workItem from="1502946882511" duration="13206000" />
       <workItem from="1502963665827" duration="1176000" />
       <workItem from="1503021520235" duration="5546000" />
-      <workItem from="1503027512651" duration="10684000" />
+      <workItem from="1503027512651" duration="13352000" />
     </task>
     <task id="LOCAL-00001" summary="mvn  config  settings.xl">
       <created>1503022269145</created>
@@ -620,14 +616,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503042547471</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="docker support">
+      <created>1503044498610</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1503044498610</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30612000" />
+    <option name="totallyTimeSpent" value="33280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="259" y="57" width="1761" height="897" extended-state="0" />
+    <frame x="284" y="70" width="1761" height="897" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -639,9 +642,9 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12169312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.49724627" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2617801" sideWeight="0.49409914" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4803665" sideWeight="0.49409914" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4960733" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4960733" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2580835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -748,10 +751,10 @@
         <state relative-caret-position="345">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="false" />
+            <element signature="e#535#536#0" expanded="false" />
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#600#601#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,10 +1013,10 @@
         <state relative-caret-position="345">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="false" />
+            <element signature="e#535#536#0" expanded="false" />
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#600#601#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,17 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../comjyselenium/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../comjyselenium/selenium_hub.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1067,16 +1059,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,9 +1088,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/cqd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../comjyselenium/src/main/java/m.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../comjyselenium/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
