@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a671915e-fc28-45b2-a6f6-7a75153430c1" name="Default" comment="fix bug">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver64" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver" />
+    <list default="true" id="a671915e-fc28-45b2-a6f6-7a75153430c1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver32" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../comjyselenium/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver64" afterPath="$PROJECT_DIR$/../comjyselenium/driver/Linux_chromedriver" />
     </list>
     <ignored path="$PROJECT_DIR$/../comjyselenium/out/" />
     <ignored path="$PROJECT_DIR$/../comjyselenium/target/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../comjyselenium/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+            <state relative-caret-position="216">
+              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -255,8 +255,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="111" />
-    <option name="y" value="92" />
+    <option name="x" value="235" />
+    <option name="y" value="325" />
     <option name="width" value="1761" />
     <option name="height" value="897" />
   </component>
@@ -580,7 +580,7 @@
       <workItem from="1502946882511" duration="13206000" />
       <workItem from="1502963665827" duration="1176000" />
       <workItem from="1503021520235" duration="5546000" />
-      <workItem from="1503027512651" duration="3725000" />
+      <workItem from="1503027512651" duration="4370000" />
     </task>
     <task id="LOCAL-00001" summary="mvn  config  settings.xl">
       <created>1503022269145</created>
@@ -617,14 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503033668033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix bug">
+      <created>1503034615566</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1503034615566</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23653000" />
+    <option name="totallyTimeSpent" value="24298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="92" width="1761" height="897" extended-state="0" />
+    <frame x="235" y="325" width="1761" height="897" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1071,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../comjyselenium/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="216">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding />
         </state>
       </provider>
