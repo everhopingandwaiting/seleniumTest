@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+    CallWebMethodWithHeader();
+
+    function CallWebMethodWithHeader() {
+
+        var soapXML = "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n" +
+            "  <soap12:Body>\n" +
+            "    <getCPCMainProdListPrice_Historical xmlns=\"http://tmtd.cpc.com.tw/\">\n" +
+            "      <prodid>string</prodid>\n" +
+            "    </getCPCMainProdListPrice_Historical>\n" +
+            "  </soap12:Body>\n" +
+            "</soap12:Envelope>";
+
+        $.ajax({
+            url: "https://vipmember.tmtd.cpc.com.tw/OpenData/ListPriceWebService.asmx?op=getCPCMainProdListPrice_Historical",
+            type: "POST",
+            dataType: "xml",
+            contentType: "text/xml; charset=utf-8",
+            data: soapXML,
+
+            success: function (data) {
+                alert("webmethod call success");
+
+            },
+            error: function (err) {
+                alert("webmethod call failed");
+            }
+
+        });
+
+    }
+</script>
+</body>
+</html>
